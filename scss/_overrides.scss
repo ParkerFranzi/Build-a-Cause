@@ -1,0 +1,136 @@
+$primary-color: #19aeae;
+$secondary-color: #F09A2A ;
+$main-typeface: 'Oswald', Arial, sans-serif;
+$secondary-typeface: 'Roboto', Georgia, serif;
+
+header {
+  background-color: $primary-color;
+}
+
+$topbar-bg-color: $primary-color;
+$topbar-bg: $topbar-bg-color $primary-color;
+
+#first-cta {
+  background-image: url('../images/background-pic.jpg');
+  background-position: center;
+}
+
+#open-road-pic {
+  padding-top: 300px;
+  h1 {
+    font-size: 30px;
+    font-family: $main-typeface;
+    color: #000000;
+    border-bottom: 4px solid #000000;
+    padding: 10px;
+  }
+  p {
+    font-size: 18px;
+    font-family: $secondary-typeface;
+    color: #000000;
+    margin-bottom: -2px;
+  }
+}
+
+#signup-button {
+  top: 0px;
+  background-color: $secondary-color;
+}
+
+#quote {
+  padding-top: 50px;
+  p {
+    font-size: 18px;
+    font-family: $secondary-typeface;
+    text-align: center;
+    color: $primary-color;
+  }
+  h3 {
+    font-size: 12px;
+    font-family: $secondary-typeface;
+    text-align: center; 
+  }
+}
+
+#quote-mark-left {
+  text-align: right;
+}
+
+#page-break{
+  text-align: center;
+  margin: 75px 0 75px 0;
+  h1{
+    color: $secondary-color;
+    font-family: $main-typeface;
+  }
+}
+
+#featured-cause {
+  background-image: url('../images/feature-background.png');
+  background-position: center;
+  text-align: center;
+  h1{
+    color: $secondary-color;
+  }
+  p{
+    color: #000000;
+  }
+  #donate-button {
+    background-color: $secondary-color;
+  }
+}
+
+#slideshow-main {
+  margin-top: 50px;
+}
+
+#what-we-do {
+  text-align: center;
+  font-family: $secondary-typeface;
+  margin-bottom: 50px;
+  h1{
+    color: $secondary-color;
+    font-family: $primary-color;
+  }
+  #building {
+    padding-bottom: 5px;
+  }
+}
+
+footer {
+  display: inline;
+  background-color: $primary-color;
+  p {
+    text-align: right;
+  }
+}
+
+#signUpModal {
+  h1 {
+    text-align: center;
+  }
+}
+
+#confirm-signup {
+  text-align: center;
+}
+
+#confirm-signup-button {
+  text-align: center;
+  background-color: $secondary-color;
+}
+
+#paymentModal {
+  h1 {
+    text-align: center;
+  }
+}
+
+#confirm-payment {
+  text-align: center;
+}
+
+#confirm-payment-button {
+  text-align: center;
+  background-color: $secondary-color;
+}
