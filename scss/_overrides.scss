@@ -3,12 +3,28 @@ $secondary-color: #F09A2A ;
 $main-typeface: 'Oswald', Arial, sans-serif;
 $secondary-typeface: 'Roboto', Georgia, serif;
 
-header {
-  background-color: $primary-color;
-}
-
 $topbar-bg-color: $primary-color;
 $topbar-bg: $topbar-bg-color $primary-color;
+
+header {
+  background-color: $primary-color;
+
+  .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section .has-form{
+    background-color: $primary-color;
+  }
+
+  .top-bar, .contain-to-grid{
+    background-color: $topbar-bg-color;
+
+    li, a{
+      background-color: $primary-color;
+    }
+  }
+  .top-bar .button, .top-bar button {
+    background-color: $secondary-color;
+
+  }
+}
 
 #first-cta {
   background-image: url('../images/background-pic.jpg');
@@ -98,10 +114,13 @@ $topbar-bg: $topbar-bg-color $primary-color;
 }
 
 footer {
-  display: inline;
+  display: inline-block;
+  width: 100%;
   background-color: $primary-color;
+  padding-top: 15px;
   p {
     text-align: right;
+    color: #ffffff;
   }
 }
 
@@ -133,4 +152,38 @@ footer {
 #confirm-payment-button {
   text-align: center;
   background-color: $secondary-color;
+}
+
+#title {
+  text-align: center;
+  h1 {
+    color: $secondary-color;
+  }
+}
+
+#browse {
+  text-align: center;
+  padding-top: 40px;
+  h1 {
+    font-family: $main-typeface;
+    font-size: 20px;
+  }
+  h2 {
+    font-family: $main-typeface;
+    font-size: 25px;
+  }
+  h3 {
+    font-family: $secondary-typeface;
+    color: $primary-color;
+    font-size: 18px;
+  }
+  p {
+    font-family: $secondary-typeface;
+    color: $primary-color;
+    text-align: left;
+
+  }
+  #browse-cause-info {
+    margin-top: 45px;
+  }
 }
