@@ -1,0 +1,301 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build a Cause</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name">
+              <a href="index.html"><img src="images/logo.png"/></a>
+            </li>
+          </ul>
+
+          <section class="top-bar-section">
+            <!-- Left Nav Section -->
+            <ul class="left">
+              <li>
+                <a href="browse.html">Browse</a>
+              </li>
+              <li>
+                <a href="create_cause.html">Create</a>
+              </li>
+              <li class="has-form">
+               <div class="row collapse">
+                 <div class="large-8 small-9 columns">
+                   <input type="text" placeholder="Search Causes">
+                 </div>
+                 <div class="large-4 small-3 columns">
+                   <a href="#" class="alert button expand"><img src="images/search-symbol.png"></a>
+                 </div>
+               </div>
+              </li>
+            </ul>
+
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li>
+                <a href="#" data-reveal-id="signInModal">Sign In</a>
+              </li>
+              <li>
+                <a href="#" data-reveal-id="signUpModal"><button id="signup-button">Sign Up!</button></a>
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+    </header>
+
+    <div id="title" class="container">
+      <h1>User Profile</h1>
+    </div>
+
+    <section id="create-profile">
+      <div class="row">
+        <aside class="medium-5 small-12 columns">
+          <div class="row">
+            <img src="images/picture-space.png">
+          </div>
+        </aside>
+        <form>
+          <div class="medium-7 small-12 columns">
+            <div class="row personal-info-container">
+              <div class="medium-8 columns">
+                <div class="row"> 
+                  <div id="label" class="small-3 columns"> 
+                    <label for="right-label" class="right inline">Name</label> 
+                  </div> 
+                  <div class="small-9 columns"> 
+                    <input type="text" id="right-label" placeholder="Enter Your Name"> 
+                  </div>
+                </div>
+                <div class="row"> 
+                  <div id="label" class="small-3 columns"> 
+                    <label for="right-label" class="right inline">Picture</label> 
+                  </div> 
+                  <div class="small-6 columns"> 
+                    <input type="text" id="right-label"> 
+                  </div>
+                  <div class="small-3 columns">
+                    <button>Browse</button>
+                  </div>                
+                </div>
+                <div class="row"> 
+                  <div id="label" class="small-3 columns"> 
+                    <label for="right-label" class="right inline">E-mail</label> 
+                  </div> 
+                  <div class="small-9 columns"> 
+                    <input type="text" id="right-label" placeholder="Enter Your E-mail"> 
+                  </div>
+                </div>
+                <div class="row"> 
+                  <div id="label" class="small-3 columns"> 
+                    <label for="right-label" class="right inline">Facebook</label> 
+                  </div> 
+                  <div class="small-9 columns"> 
+                    <input type="text" id="right-label" placeholder="Enter Your Facebook"> 
+                  </div>                
+                </div>
+                <div class="row"> 
+                  <div id="label" class="small-3 columns"> 
+                    <label for="right-label" class="right inline">Twitter</label> 
+                  </div> 
+                  <div class="small-9 columns"> 
+                    <input type="text" id="right-label" placeholder="Enter Your Twitter"> 
+                  </div>                
+                </div>
+                <div class="row"> 
+                  <div id="label" class="small-3 columns"> 
+                    <label for="right-label" class="right inline">Private?</label> 
+                  </div> 
+                  <div class="small-9 columns"> 
+                    <input type="checkbox" id="checkbox"> 
+                  </div>                
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-2 columns"></div>
+        <div id="user-info" class="medium-8 columns small-12 columns">
+          <h2>User Info</h2>
+          <textarea></textarea>
+        </div>
+        <div class="medium-2 columns"></div>
+      </div>
+
+    </section>
+
+
+    <footer>
+      <div class="contain-to-grid">
+        <div class="small-12 columns">
+          <div class="row">
+            <div class="small-6 columns">
+              <div id="logo">
+                <a href="#"><img src="images/logo.png"></a>
+              </div>
+            </div>
+            <div id="copyright" class="small-6 columns">
+              <p>&copy; 2014. Build a Cause. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="signInModal" class="reveal-modal" data-reveal>
+      <h1>Sign In</h1>
+      <form> 
+        <div class="row"> 
+          <div class="small-8"> 
+            <div class="row"> 
+              <div class="small-5 columns"> 
+                <label for="name-label" class="right inline">User Name</label>
+              </div> 
+              <div class="small-7 columns"> 
+                <input type="text" id="name-label" placeholder="Enter Your User Name"> 
+              </div>
+            </div>
+            <div class="row">  
+              <div class="small-5 columns"> 
+                <label for="email-label" class="right inline">Email</label>
+              </div> 
+              <div class="small-7 columns"> 
+                <input type="text" id="email-label" placeholder="Enter Your Email Address"> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="small-12 columns" id="signin">
+          <a href="#"><button id="signin-button">Sign In!</button></a> 
+        </div>
+      </div>
+      <a class="close-reveal-modal">&#215;</a>
+
+
+    <div id="signUpModal" class="reveal-modal" data-reveal>
+      <h1>Sign Up</h1>
+      <form> 
+        <div class="row"> 
+          <div class="small-8"> 
+            <div class="row"> 
+              <div class="small-5 columns"> 
+                <label for="name-label" class="right inline">User Name</label>
+              </div> 
+              <div class="small-7 columns"> 
+                <input type="text" id="name-label" placeholder="Enter Your User Name"> 
+              </div>
+            </div>
+            <div class="row">  
+              <div class="small-5 columns"> 
+                <label for="email-label" class="right inline">Email</label>
+              </div> 
+              <div class="small-7 columns"> 
+                <input type="text" id="email-label" placeholder="Enter Your Email Address"> 
+              </div>
+            </div>
+            <div class="row">  
+              <div class="small-5 columns"> 
+                <label for="password-label" class="right inline">Password</label>
+              </div> 
+              <div class="small-7 columns"> 
+                <input type="text" id="password-label" placeholder="Enter a Password"> 
+              </div>
+            </div>
+            <div class="row">  
+              <div class="small-5 columns"> 
+                <label for="reEnterPassword-label" class="right inline">Re-Enter Password</label>
+              </div> 
+              <div class="small-7 columns"> 
+                <input type="text" id="reEnterPassword-label" placeholder="Re-Enter Your Password"> 
+              </div>                                          
+            </div>
+          </div> 
+        </div> 
+      </form>
+      <div class="row">
+        <div class="small-12 columns" id="confirm-signup">
+          <a href="#"><button id="confirm-signup-button">Sign Up!</button></a> 
+        </div>
+      </div>
+      <a class="close-reveal-modal">&#215;</a>
+
+
+    <div id="paymentModal" class="reveal-modal" data-reveal>
+      <h1>Payment Information</h1>
+      <form> 
+        <div class="row"> 
+          <div class="small-8"> 
+            <div class="row"> 
+              <div class="small-5 columns"> 
+                <label for="name-on-card-label" class="right inline">User Name</label>
+              </div> 
+              <div class="small-7 columns"> 
+                <input type="text" id="name-on-card-label" placeholder="Enter Your User Name"> 
+              </div>
+            </div>
+            <div class="row">  
+              <div class="small-5 columns"> 
+                <label for="cc-number-label" class="right inline">Credit Card #</label>
+              </div> 
+              <div class="small-7 columns"> 
+                <input type="text" id="cc-number-label" placeholder="Enter Your Credit Card #"> 
+              </div>
+            </div>
+            <div class="row">  
+              <div class="small-5 columns"> 
+                <label for="address-label" class="right inline">Address</label>
+              </div> 
+              <div class="small-7 columns"> 
+                <input type="text" id="address-label" placeholder="Enter Your Address"> 
+              </div>
+            </div>
+            <div class="row">  
+              <div class="small-5 columns"> 
+                <label for="state-zip-label" class="right inline">State, Zip</label>
+              </div> 
+              <div class="small-2 columns"> 
+                <input type="text" id="state-zip-label" placeholder="State">
+              </div>
+              <div class="small-2 columns end">
+                <input type="text" id="state-zip-label" placeholder="Zip">
+              </div>                                          
+            </div>
+            <div class="row">  
+              <div class="small-5 columns"> 
+                <label for="amount-label" class="right inline">Amount</label>
+              </div> 
+              <div class="small-2 columns end"> 
+                <input type="text" id="amount-label" placeholder="State">
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </form>
+      <div class="row">
+        <div class="small-12 columns" id="confirm-payment">
+          <a href="#"><button id="confirm-payment-button">Sign Up!</button></a> 
+        </div>
+      </div>
+      <a class="close-reveal-modal">&#215;</a>
+
+
+    <script>
+      $(document).foundation();
+    </script>
+
+  </body>
+</html>

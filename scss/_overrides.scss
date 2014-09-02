@@ -49,8 +49,9 @@ header {
 }
 
 #signup-button {
-  top: 0px;
+  top: 2px;
   background-color: $secondary-color;
+  font-family: $main-typeface;
 }
 
 #quote {
@@ -93,6 +94,7 @@ header {
   }
   #donate-button {
     background-color: $secondary-color;
+    font-family: $main-typeface;
   }
 }
 
@@ -127,31 +129,50 @@ footer {
 #signUpModal {
   h1 {
     text-align: center;
+    font-family: $main-typeface;
+    color: $primary-color;
+  }
+  #confirm-signup {
+  text-align: center;
+  }
+  #confirm-signup-button {
+  text-align: center;
+  background-color: $secondary-color;
+  font-family: $main-typeface;
   }
 }
 
-#confirm-signup {
-  text-align: center;
+#signInModal {
+  h1 {
+    text-align: center;
+    font-family: $main-typeface;
+    color: $primary-color;
+  }
+  #signin {
+    text-align: center;
+  }
+  #signin-button {
+    text-align: center;
+    background-color: $secondary-color;
+    font-family: $main-typeface;
+  }
 }
 
-#confirm-signup-button {
-  text-align: center;
-  background-color: $secondary-color;
-}
 
 #paymentModal {
   h1 {
     text-align: center;
+    font-family: $main-typeface;
+    color: $primary-color;
   }
-}
-
-#confirm-payment {
-  text-align: center;
-}
-
-#confirm-payment-button {
-  text-align: center;
-  background-color: $secondary-color;
+  #confirm-payment {
+    text-align: center;
+  }
+  #confirm-payment-button {
+    text-align: center;
+    background-color: $secondary-color;
+    font-family: $main-typeface;
+  }
 }
 
 #title {
@@ -186,4 +207,132 @@ footer {
   #browse-cause-info {
     margin-top: 45px;
   }
+}
+
+#create-cause-form {
+  padding-left: 150px;
+  #description-left .textarea {
+    height: 150px;
+  }
+  textarea {
+  min-height: 150px;
+  }
+}
+
+#create-cause-button {
+    text-align: center;
+    background-color: $secondary-color;
+    font-family: $main-typeface;
+}
+
+.prefix {
+  width: 90%;
+  margin-left: 8px;
+}
+
+
+
+
+#browse-background-pic {
+  button {
+    padding: 6px 30px;
+    background-color: $primary-color;
+    font-family: $main-typeface;
+  }
+}
+
+#create-profile {
+  aside {
+    padding-left: 175px;
+  }
+  button {
+    padding: 6px 15px;
+    background-color: $primary-color;
+    font-family: $main-typeface;
+  }
+  #label {
+    font-family: $secondary-typeface;
+    font-weight: bold;
+  }
+  .checkbox {
+    padding-top: 5px;
+  }
+  #user-info {
+    h2 {
+      font-family: $secondary-typeface;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    textarea {
+      min-height: 250px;
+    }
+  }
+} 
+
+#view-profile {
+  aside {
+    padding-left: 175px;
+  }
+  h2 {
+    font-family: $main-typeface;
+    font-size: 14px;
+    margin-top: 9px;
+  }
+  button {
+    padding: 6px 15px;
+    background-color: $primary-color;
+    font-family: $main-typeface;
+  }
+  #label {
+    font-family: $secondary-typeface;
+    font-weight: bold;
+  }
+  #user-info {
+    h2 {
+      font-family: $secondary-typeface;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    textarea {
+      min-height: 250px;
+    }
+  }
+} 
+
+#view-cause-slideshow {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-image: url('../images/feature-background.png');
+  #slideshow-view{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+#view-information {
+  #social-media {
+    margin-left: -15px;
+    padding-bottom: 20px;
+  }
+  aside {
+    text-align: center;
+    font-family: $main-typeface;
+    button {
+      background-color: $secondary-color;
+      margin-left: 20px;
+    }
+    h2 {
+      margin-left: 20px;
+    }
+    #comments {
+      p {
+        font-family: $secondary-typeface;
+        font-style: italic;
+        margin-left: 20px;
+      }
+    }
+  }
+
 }
