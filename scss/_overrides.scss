@@ -75,7 +75,16 @@ header {
 
 #page-break{
   text-align: center;
-  margin: 75px 0 75px 0;
+  margin: 75px 0 150px 0;
+  h1{
+    color: $secondary-color;
+    font-family: $main-typeface;
+  }
+}
+
+#page-break-two{
+  text-align: center;
+  margin: 150px 0 75px 0;
   h1{
     color: $secondary-color;
     font-family: $main-typeface;
@@ -250,14 +259,15 @@ footer {
     background-color: $primary-color;
     font-family: $main-typeface;
   }
-  #label {
+  label {
     font-family: $secondary-typeface;
-    font-weight: bold;
+    font-weight: bold !important;
   }
-  .checkbox {
-    padding-top: 5px;
+  #checkbox {
+    margin-top: 14px;
   }
   #user-info {
+    left: -20px;
     h2 {
       font-family: $secondary-typeface;
       text-align: center;
@@ -266,6 +276,7 @@ footer {
     }
     textarea {
       min-height: 250px;
+
     }
   }
 } 
@@ -284,11 +295,12 @@ footer {
     background-color: $primary-color;
     font-family: $main-typeface;
   }
-  #label {
+  label {
     font-family: $secondary-typeface;
     font-weight: bold;
   }
   #user-info {
+    left: -20px;
     h2 {
       font-family: $secondary-typeface;
       text-align: center;
@@ -335,4 +347,32 @@ footer {
     }
   }
 
+}
+
+.subtitle{
+  text-align: center;
+
+  span{
+    display: inline-block;
+    position: relative;
+
+    &:after{
+      left: 100%;
+      margin-left: 100px;
+    }
+
+    &:before{
+      right: 100%;
+      margin-right: 100px;
+    }
+
+    &:after, &:before{
+      content: "";
+      position: absolute;
+      height: 5px;
+      border-top: 10px solid #ffbf3b;
+      top: 30px;
+      width: 200px;
+    }
+  }
 }
