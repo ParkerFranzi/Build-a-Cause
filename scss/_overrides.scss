@@ -227,12 +227,15 @@ footer {
 }
 
 #create-cause-form {
-  padding-left: 150px;
   #description-left .textarea {
     height: 150px;
   }
   textarea {
   min-height: 150px;
+  }
+  label {
+    font-family: $main-typeface;
+    font-weight: bold;
   }
 }
 
