@@ -6,6 +6,10 @@ $secondary-typeface: 'Roboto', Georgia, serif;
 $topbar-bg-color: $primary-color;
 $topbar-bg: $topbar-bg-color $primary-color;
 
+html, body{
+  overflow-x: hidden;
+}
+
 header {
   background-color: $primary-color;
 
@@ -251,9 +255,6 @@ footer {
 }
 
 #create-profile {
-  aside {
-    padding-left: 175px;
-  }
   button {
     padding: 6px 15px;
     background-color: $primary-color;
@@ -267,7 +268,6 @@ footer {
     margin-top: 14px;
   }
   #user-info {
-    left: -20px;
     h2 {
       font-family: $secondary-typeface;
       text-align: center;
@@ -282,9 +282,6 @@ footer {
 } 
 
 #view-profile {
-  aside {
-    padding-left: 175px;
-  }
   h2 {
     font-family: $main-typeface;
     font-size: 14px;
@@ -300,7 +297,6 @@ footer {
     font-weight: bold;
   }
   #user-info {
-    left: -20px;
     h2 {
       font-family: $secondary-typeface;
       text-align: center;

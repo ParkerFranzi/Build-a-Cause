@@ -17,12 +17,13 @@
             <li class="name">
               <a href="index.html"><img src="images/logo.png"/></a>
             </li>
+             <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
           </ul>
 
           <section class="top-bar-section">
             <!-- Left Nav Section -->
             <ul class="left">
-              <li>
+              <li>                
                 <a href="browse.html">Browse</a>
               </li>
               <li>
@@ -45,7 +46,7 @@
               <li>
                 <a href="#" data-reveal-id="signInModal">Sign In</a>
               </li>
-              <li>
+              <li class="hidden-for-medium-only">
                 <a href="#" data-reveal-id="signUpModal"><button id="signup-button">Sign Up!</button></a>
               </li>
             </ul>
@@ -60,15 +61,13 @@
 
     <section id="view-profile">
       <div class="row">
-        <aside class="medium-5 small-12 columns">
-          <div class="row">
+        <div class="small-12 medium-8 medium-offset-2 columns">
+          <div class="medium-6 small-12 columns">
             <img src="images/profile-pic.png">
           </div>
-        </aside>
-        <form>
-          <div class="medium-7 small-12 columns">
+          <form class="medium-6 small-12 columns">
             <div class="row personal-info-container">
-              <div class="medium-8 columns">
+              <div class="small-12 columns">
                 <div class="row"> 
                   <div class="small-3 columns"> 
                     <label for="right-label" class="right inline">Name</label> 
