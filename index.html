@@ -181,6 +181,14 @@
                 <input type="text" id="email-label" placeholder="Enter Your Email Address"> 
               </div>
             </div>
+            <div class="row">  
+              <div class="small-5 columns"> 
+                <label for="email-label" class="right inline">Password</label>
+              </div> 
+              <div class="small-7 columns"> 
+                <input type="text" id="email-label" placeholder="Enter Your Password"> 
+              </div>
+            </div>
           </div>
         </div>
       </form>
@@ -303,6 +311,10 @@
     <script>
       $(document).foundation();
     </script>
+
+    <%= javascript_include_tag "app" %>
+    <script type="text/javascript">$(function(){ $(document).foundation(); });</script>
+    </div>
 
   </body>
 </html>
