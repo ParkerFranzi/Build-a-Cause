@@ -140,7 +140,7 @@
       </div>
     </footer>
 
-    <div id="signInModal" class="reveal-modal" data-reveal>
+    <div id="signInModal" class="reveal-modal" data-reveal="">
       <h1>Sign In</h1>
       <form> 
         <div class="row"> 
@@ -159,6 +159,14 @@
               </div> 
               <div class="small-7 columns"> 
                 <input type="text" id="email-label" placeholder="Enter Your Email Address"> 
+              </div>
+            </div>
+            <div class="row">  
+              <div class="small-5 columns"> 
+                <label for="password-label" class="right inline">Password</label>
+              </div> 
+              <div class="small-7 columns"> 
+                <input type="text" id="password-label" placeholder="Enter Your Password"> 
               </div>
             </div>
           </div>
@@ -220,33 +228,60 @@
       <a class="close-reveal-modal">&#215;</a>
     </div>
 
-    <div id="signInModal" class="reveal-modal" data-reveal>
-      <h1>Sign In</h1>
+    <div id="paymentModal" class="reveal-modal" data-reveal>
+      <h1>Payment Information</h1>
       <form> 
         <div class="row"> 
           <div class="small-8"> 
             <div class="row"> 
               <div class="small-5 columns"> 
-                <label for="name-label" class="right inline">User Name</label>
+                <label for="name-on-card-label" class="right inline">User Name</label>
               </div> 
               <div class="small-7 columns"> 
-                <input type="text" id="name-label" placeholder="Enter Your User Name"> 
+                <input type="text" id="name-on-card-label" placeholder="Enter Your User Name"> 
               </div>
             </div>
             <div class="row">  
               <div class="small-5 columns"> 
-                <label for="email-label" class="right inline">Email</label>
+                <label for="cc-number-label" class="right inline">Credit Card #</label>
               </div> 
               <div class="small-7 columns"> 
-                <input type="text" id="email-label" placeholder="Enter Your Email Address"> 
+                <input type="text" id="cc-number-label" placeholder="Enter Your Credit Card #"> 
               </div>
             </div>
-          </div>
-        </div>
+            <div class="row">  
+              <div class="small-5 columns"> 
+                <label for="address-label" class="right inline">Address</label>
+              </div> 
+              <div class="small-7 columns"> 
+                <input type="text" id="address-label" placeholder="Enter Your Address"> 
+              </div>
+            </div>
+            <div class="row">  
+              <div class="small-5 columns"> 
+                <label for="state-zip-label" class="right inline">State, Zip</label>
+              </div> 
+              <div class="small-2 columns"> 
+                <input type="text" id="state-zip-label" placeholder="State">
+              </div>
+              <div class="small-2 columns end">
+                <input type="text" id="state-zip-label" placeholder="Zip">
+              </div>                                          
+            </div>
+            <div class="row">  
+              <div class="small-5 columns"> 
+                <label for="amount-label" class="right inline">Amount</label>
+              </div> 
+              <div class="small-2 columns end"> 
+                <input type="text" id="amount-label" placeholder="State">
+              </div>
+            </div>
+          </div> 
+        </div> 
       </form>
       <div class="row">
-        <div class="small-12 columns" id="signin">
-          <a href="#"><button id="signin-button">Sign In!</button></a> 
+        <div class="small-12 columns" id="confirm-payment">
+          <a href="#"><button id="confirm-payment-button">Sign Up!</button></a> 
         </div>
       </div>
       <a class="close-reveal-modal">&#215;</a>

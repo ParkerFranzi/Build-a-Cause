@@ -9421,3 +9421,13 @@ footer p {
 .reveal-modal, dialog {
   position: fixed;
 }
+
+/* line 387, ../scss/_overrides.scss */
+#profile-button {
+  text-align: center;
+}
+/* line 389, ../scss/_overrides.scss */
+#profile-button button {
+  background-color: #F09A2A;
+  font-family: "Oswald", Arial, sans-serif;
+}

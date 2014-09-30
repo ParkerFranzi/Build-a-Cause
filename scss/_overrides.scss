@@ -383,3 +383,11 @@ footer {
 .reveal-modal {
    position: fixed;
 }
+
+#profile-button {
+  text-align: center;
+  button {
+    background-color: $secondary-color;
+    font-family: $main-typeface;
+  }
+}
